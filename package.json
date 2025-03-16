@@ -1,6 +1,6 @@
 {
   "name": "@tlylt/vue-tree",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -43,5 +43,8 @@
     "vue tree view",
     "visualization",
     "vue3"
-  ]
+  ],
+  "exports": {
+    "./style.css": "./dist/vue-tree.css"
+  }
 }
