@@ -1,6 +1,6 @@
 <template>
     <p>From Slot</p>
-    <div class="vue-tree">{{ treeVisualized }}</div>
+    <pre class="vue-tree">{{ treeVisualized }}</pre>
 </template>
 
 <script lang="ts">
