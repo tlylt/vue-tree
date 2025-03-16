@@ -1,6 +1,6 @@
 {
   "name": "@tlylt/vue-tree",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -16,7 +16,6 @@
   "peerDependencies": {
     "vue": "^3.0.0"
   },
-  "module": "dist/vue-tree.es.js",
   "devDependencies": {
     "@types/lodash": "^4.17.16",
     "@types/node": "^22.13.10",
@@ -45,6 +44,10 @@
     "vue3"
   ],
   "exports": {
+    ".": {
+      "import": "./dist/vue-tree.es.js",
+      "require": "./dist/vue-tree.umd.js"
+    },
     "./style.css": "./dist/vue-tree.css"
   }
 }
