@@ -5,7 +5,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { TreeNode } from './tree.ts';
+import { TreeNode } from './tree';
 
 export default defineComponent({
     name: 'VueTree',

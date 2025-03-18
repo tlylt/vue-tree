@@ -8,7 +8,16 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    /* Type Declaration */
+    "noEmit": false, // This is important to generate type declaration files
+    "emitDeclarationOnly": true, // This prevents the generation of JS files, which is left to vite
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "dist/types",
+    "rootDir": "src"
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["node_modules", "dist"]
 }

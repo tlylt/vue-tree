@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
-import { VueTree } from './index.ts'
+import VueTree from './components/VueTree.vue'
 
-// import {VueTree} from '@tlylt/vue-tree'
+// import { VueTree } from '@tlylt/vue-tree'
 // import '@tlylt/vue-tree/style.css'
 
 </script>
@@ -12,9 +12,10 @@ import { VueTree } from './index.ts'
   <VueTree>
   C:/course/
     textbook/
-      index.md
+    index.md
     index.md
     reading.md
     site.json
   </VueTree>
+
 </template>

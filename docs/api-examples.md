@@ -5,10 +5,10 @@ outline: deep
 <VueTree>
 C:/course/
   textbook/
-index.md
-index.md
-reading.md
-site.json
+    index.md
+    index.md
+  reading.md
+    site.json
 </VueTree>
 
 # Runtime API Examples

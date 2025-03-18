@@ -11,7 +11,7 @@
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    "noEmit": true, // This is important to prevent the generation of JS files
 
     /* Linting */
     "strict": true,
