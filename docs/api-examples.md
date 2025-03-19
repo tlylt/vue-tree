@@ -4,7 +4,7 @@ outline: deep
 
 <VueTree>
 C:/course/
-  textbook/
+textbook/
     index.md
     index.md
   reading.md
@@ -42,8 +42,9 @@ const { theme, page, frontmatter } = useData()
 
 <script setup>
 import { useData } from 'vitepress'
-import { VueTree } from '@tlylt/vue-tree'
-import '@tlylt/vue-tree/style.css'
+import { VueTree } from '../src/index'
+// import { VueTree } from '@tlylt/vue-tree'
+// import '@tlylt/vue-tree/style.css'
 
 const { site, theme, page, frontmatter } = useData()
 </script>

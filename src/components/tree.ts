@@ -16,6 +16,7 @@ const TOKEN = {
   lastChild: '└── ',
   connector: '│   ',
   space: '    ',
+  newLine: '\n',
 };
 
 export class TreeNode {
@@ -74,7 +75,7 @@ export class TreeNode {
    * @return The dummy root node of the tree.
    */
   static parse(raw: string): TreeNode {
-    const lines = raw.split('\n').filter(line => line.trim() !== '');
+    const lines = raw.split(TOKEN.newLine).filter(line => line.trim() !== '');
     const rootNode = new TreeNode('.', null, [], -1); // dummy root node
     const prevParentStack = [rootNode];
     let prevLevel = rootNode.level;
@@ -113,10 +114,10 @@ export class TreeNode {
       return;
     }
     if (currNode.parent === null) {
-      result.push(`${currNode.content}\n`);
+      result.push(`${currNode.content}${TOKEN.newLine}`);
     } else {
       const tokens = [
-        '\n',
+        TOKEN.newLine,
         currNode.content,
         currNode.getPositionalToken(),
       ];
