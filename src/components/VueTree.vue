@@ -1,5 +1,4 @@
 <template>
-    <p>From Slot</p>
     <pre class="vue-tree">{{ treeVisualized }}</pre>
 </template>
 
